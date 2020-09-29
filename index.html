@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Spares</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="app.css" rel="stylesheet"></head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-info">
+          <div class="header__logo header-info__item">
+            <img src="./assets/main/logo.png" alt="logo">
+            <p>Спец<br>Сервис<br>Центр</p>
+          </div>
+          <p class="header__text header-info__item">Комплектующие для дорожно-строительной техники. Диагностика и ремонт</p>
+          <div class="header-consultation header-info__item">
+            <img src="./assets/main/consultation-img.png" alt="image">
+            <p class="header-consultation__phone">+7 (965) 173-54-95</p>
+            <p class="header-consultation__text">Консультация механика</p>
+          </div>
+          <div class="header__socials header-info__item">
+            <p class="header__social"><img src="./assets/main/viber.png" alt="viber"></p>
+            <p class="header__social"><img src="./assets/main/whatsapp.png" alt="whatsapp"></p>
+            <p class="header__social"><img src="./assets/main/telegram.png" alt="telegram"></p>
+          </div>
+          <button class="header__button header-info__item">Заказать звонок</button>
+        </div>
+      </div>
+      <div class="menu">
+        <div class="container">
+          <nav class="nav">
+            <i class="fas fa-bars mobile-menu"></i>
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="" class="nav__link">Главная</a>
+              </li>
+              <li class="nav__item">
+                <a href="" class="nav__link">Каталог</a>
+              </li>
+              <li class="nav__item">
+                <a href="" class="nav__link">Ремонт</a>
+              </li>
+              <li class="nav__item">
+                <a href="" class="nav__link">Диагностика</a>
+              </li>
+              <li class="nav__item">
+                <a href="" class="nav__link">Техническое обслуживание</a>
+              </li>
+              <li class="nav__item">
+                <a href="" class="nav__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!--diagnistc-->
+    <main class="main">
+      <div class="container">
+        <section class="d-request">
+          <h1 class="d-request__header">Бесплатная комплексная диагностика дорожно-строительной техники в день подачи заявки</h1>
+          <form method="POST" class="d-request__form">
+            <p class="d-request__form-text">Выезд на ваш объект по Москве и регионам</p>
+            <label>
+              Введите ваш телефон
+              <input type="text" placeholder="+375 (XX) XXX-XX-XX">
+            </label>
+            <input type="submit" value="Оставить заявку">
+          </form>
+          <div class="d-request__logos">
+            <img src="./assets/main/hidromek.png" alt="image" class="d-request__logo">
+            <img src="./assets/main/hitachi.png" alt="image" class="d-request__logo">
+            <img src="./assets/main/jcb.png" alt="image" class="d-request__logo">
+          </div>
+        </section>
+
+        <section class="d-advantages">
+          <h2 class="d-advantages__header">Снизим простои машин в 1,5 раза</h2>
+          <div class="d-advantages__wrap">
+            <div class="d-advantages__item">
+              <img src="./assets/diagnostic/adv-1.png" alt="image">
+              <p>При диагностике узлов и систем строительной техники, экскаваторов и погрузчиков</p>
+            </div>
+
+            <div class="d-advantages__item">
+              <img src="./assets/diagnostic/adv-2.png" alt="image">
+              <p>При сбоях в работе техники</p>
+            </div>
+
+            <div class="d-advantages__item">
+              <img src="./assets/diagnostic/adv-3.png" alt="image">
+              <p>При подготовке к работе после простоя</p>
+            </div>
+
+            <div class="d-advantages__item">
+              <img src="./assets/diagnostic/adv-4.png" alt="image">
+              <p>В начале рабочего сезона</p>
+            </div>
+
+            <div>
+              <img src="./assets/diagnostic/adv-2.png" alt="">
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!--<main class="main">
+      <section class="intro">
+        <div class="intro__content intro__item">
+          <h1 class="intro__header">Оригинальные запчасти для дорожно-строительной техники</h1>
+          <p class="intro__text">Более 1500 деталей на складе</p>
+          <div class="intro__points">
+            <p class="intro__point">доставка день в день</p>
+            <p class="intro__point">гарантия на детали 3 месяца</p>
+            <p class="intro__point">прямые поставки из Европы, Кореи, Японии</p>
+            <p class="intro__point">бесплатная диагностика неполадок</p>
+          </div>
+          <form class="intro__form" action="" method="POST">
+            <input type="tel" placeholder="Номер телефона">
+            <input type="submit" value="Оставить заявку">
+          </form>
+        </div>
+        <div class="intro__img-wrap intro__item">
+          <img src="./assets/main/intro.png" alt="car">
+        </div>
+        <div class="companies">
+          <div><img src="./assets/main/hidromek.png" alt=""></div>
+          <div><img src="./assets/main/perkins.png" alt=""></div>
+          <div><img src="./assets/main/john-deere.png" alt=""></div>
+          <div><img src="./assets/main/john-deere.png" alt=""></div>
+          <div><img src="./assets/main/hitachi.png" alt=""></div>
+          <div><img src="./assets/main/jcb.png" alt=""></div>
+        </div>
+      </section>
+
+      <div class="container">
+        <section class="delivery">
+          <h2 class="delivery__header">Доставка качественных запчастей в день оформления заявки</h2>
+          <div class="delivery__content-wrap">
+            <div class="delivery__img-wrap">
+              <img src="./assets/main/delivery.png" class="delivery__img" alt="delivery">
+            </div>
+            <div class="delivery__content">
+              <h4 class="delivery__subheader">Ваша техника исправно работает уже завтра</h4>
+              <p class="delivery__text">
+                Основное направление работы “Спецсервисцентр” — подбор и поставка комплектующих, агрегатов, узлов и расходных материалов для специальной техники. 
+              </p>
+              <p class="delivery__text">
+                Подберем и доставим деталь по Москве в день оплаты, чтобы экскаваторы, бульдозеры и погрузчики работали без простоев. 
+              </p>
+              <p class="delivery__text">
+                На нашем складе 1 500 ед. комплектующих для техники мировых производителей: Hidromek, Perkins, John Deere, Isuzu, Hitachi, JSB.
+              </p>
+              <p class="delivery__text">
+                Под заказ доставим любую деталь от производителя из Европы, Кореи, Японии. Срок поставки от 3 дней. 
+              </p>
+              <div class="delivery__btn-wrap">
+                <a href="" class="delivery__btn">Перейти в каталог</a>
+                <div class="delivery__guarantee">
+                  <p>3 мес</p>
+                  <p>гарантия на детали</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="repairs">
+          <h2 class="repairs__header">Появились проблемы с техникой: диагностика, ремонт и обслуживание с выездом на вашу базу</h2>
+          <div class="repairs__content-wrap">
+            <div class="repairs__content">
+              <div class="repairs__descr">
+                <img src="./assets/main/badge-1.png" alt="badge" class="repairs__badge">
+                <p class="reapirs__descr-text">
+                  Обслуживаем технику ведущих мировых производителей: Hidromek, Hitachi, JСB.
+                </p>
+              </div>
+              <div class="repairs__descr">
+                <img src="./assets/main/badge-2.png" alt="badge" class="repairs__badge">
+                <p class="reapirs__descr-text">
+                  Служба сервиса поможет разобраться в неполадках, устранить и предотвратить поломки гусеничных и колесных экскаваторов, погрузчиков, бульдозеров.
+                </p>
+              </div>
+              <div class="repairs__descr">
+                <img src="./assets/main/badge-3.png" alt="badge" class="repairs__badge">
+                <p class="reapirs__descr-text">
+                  Механики с 10-летним опытом найдут и исправят поломки двигателей, мостов, КПП, редукторов хода и поворота. Оперативно. Без необходимости транспортировки спецтехники. Гарантируем качество и срок активной эксплуатации.
+                </p>
+              </div>
+              <div class="repairs__guarantee">
+                <p>6 мес</p>
+                <p>гарантия на ремонт и обслуживание</p>
+              </div>
+            </div>
+            <div class="repairs__img-wrap">
+              <img src="./assets/main/repairs.png" alt="repairs" class="repairs__img">
+            </div>
+          </div>
+          <div class="services">
+            <div class="services__item service">
+              <div class="service__head">
+                <img src="./assets/main/service-1.png" alt="service" class="service__img">
+                <h6 class="service__header">Диагностика</h6>
+              </div>
+              <p class="service__point">экскаваторов</p>
+              <p class="service__point">мини-экскаваторов</p>
+              <p class="service__point">бульдозеров</p>
+              <p class="service__point">погрузчиков</p>
+              <p class="service__point">экскаваторов-погрузчиков</p>
+              <a href="#" class="service__btn">Узнать подробнее</a>
+            </div>
+
+            <div class="services__item service">
+              <div class="service__head">
+                <img src="./assets/main/service-2.png" alt="service" class="service__img">
+                <h6 class="service__header">Ремонт</h6>
+              </div>
+              <p class="service__point">экскаваторов</p>
+              <p class="service__point">мини-экскаваторов</p>
+              <p class="service__point">бульдозеров</p>
+              <p class="service__point">погрузчиков</p>
+              <p class="service__point">экскаваторов-погрузчиков</p>
+              <a href="#" class="service__btn">Узнать подробнее</a>
+            </div>
+
+            <div class="services__item service">
+              <div class="service__head">
+                <img src="./assets/main/service-3.png" alt="service" class="service__img">
+                <h6 class="service__header">Техническое обслуживание</h6>
+              </div>
+              <p class="service__point">плановое</p>
+              <p class="service__point">частичное</p>
+              <p class="service__point">полное</p>
+              <a href="#" class="service__btn">Узнать подробнее</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="request">
+          <h2 class="request__header">Предотвратите неожиданные поломки и простой техники в будущем</h2>
+          <p class="request__subheader">Оставьте заявку на бесплатную диагностику</p>
+          <form action="" method="POST" class="request__form req-form">
+            <div class="req-form__content-wrap">
+              <div>
+                <h6 class="req-form__header">Заполните форму и инженер-механик перезвонит вам </h6>
+                <p class="req-form__question">Укажите категорию вашей техники</p>
+                <div class="req-form__radio-inputs">
+                  <label>
+                    <input type="radio" name="question-1">
+                    экскаватор
+                  </label>
+                  <label>
+                    <input type="radio" name="question-1">
+                    погрузчик
+                  </label>
+                  <label>
+                    <input type="radio" name="question-1">
+                    бульдозер
+                  </label>
+                  <label>
+                    <input type="radio" name="question-1">
+                    другое
+                  </label>
+                </div>
+
+                <p class="req-form__question">Знаете ли вы причину неисправности</p>
+                <div class="req-form__radio-inputs">
+                  <label>
+                    <input type="radio" name="question-2">
+                    да
+                  </label>
+                  <label>
+                    <input type="radio" name="question-2">
+                    нет, нужна диагностика
+                  </label>
+                </div>
+              </div>
+              <img src="./assets/main/request.png" class="req-form__img" alt="request-img">
+            </div>
+            <div class="req-form__text-inputs">
+              <label>
+                Введите ваше имя
+                <input type="text" placeholder="Например, Иван">
+              </label>
+              <label>
+                Введите ваш телефон
+                <input type="tel" placeholder="+375 (XX) XXX-XX-XX">
+              </label>
+              <label>
+                Введите ваш email
+                <input type="email" placeholder="Ivan33@mail.ru">
+              </label>
+              <input type="submit" value="Оставить заявку">
+            </div>
+          </form>
+        </section>
+
+        <section class="advantages">
+          <h2 class="advantages__header">Безотказная работа вашей спецтехники —  наша ответственность</h2>
+          <div class="advantages__wrap">
+            <div class="advantage">
+              <p>1</p>
+              <p>Доставляем деталь со склада и выезжаем на место ремонта в день подачи заявки</p>
+            </div>
+
+            <div class="advantage">
+              <p>2</p>
+              <p>10 лет опыта позволяют решать задачи, за которые не рискуют браться другие</p>
+            </div>
+
+            <div class="advantage">
+              <p>3</p>
+              <p>Поставки запчастей под заказ от 3 дней из Европы, Кореи и Японии</p>
+            </div>
+
+            <div class="advantage">
+              <p>4</p>
+              <p>Цены ниже рыночных на 10% за счет прямых поставок и собственного оборудования </p>
+            </div>
+          </div>
+        </section>
+      </div>
+      <section class="examples">
+        <div class="container">
+          <h2 class="examples__header">Примеры работ</h2>
+          <div class="examples__wrap">
+            <div class="example">
+              <img src="./assets/main/example-1.png" class="example__img" alt="example-img">
+              <p>Ремонт двигателя</p>
+            </div>
+
+            <div class="example">
+              <img src="./assets/main/example-2.png" class="example__img" alt="example-img">
+              <p>Ремонт АКПП</p>
+            </div>
+
+            <div class="example">
+              <img src="./assets/main/example-3.png" class="example__img" alt="example-img">
+              <p>Ремонт моста</p>
+            </div>
+
+            <div class="example">
+              <img src="./assets/main/example-4.png" class="example__img" alt="example-img">
+              <p>Ремонт редуктора хода</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="container">
+        <section class="payment">
+          <h2 class="payment__header">Доставка и оплата любым удобным способом</h2>
+          <div class="payment__wrap">
+            <div class="payment__img-wrap">
+              <img src="./assets/main/payment.png" alt="payment-img" class="payment__img">
+            </div>
+            <div class="payment__content-wrap">
+              <div class="payment__content-item">
+                <p class="payment__content-subheader">Получаете запчасти там, где вам удобно</p>
+                <div class="payment__content-point">
+                  <img src="./assets/main/uil_box.png" alt="img">
+                  <p>Доставка курьером лично в руки</p>
+                </div>
+
+                <div class="payment__content-point">
+                  <img src="./assets/main/uil_location-pin-alt.png" alt="img">
+                  <p>Самовывоз: г. Москва,  ул. Мологвардейская, 58</p>
+                </div>
+
+                <div class="payment__content-point">
+                  <img src="./assets/main/uil_truck.png" alt="img">
+                  <p>Деловые линии, ПЭК и другие ТК</p>
+                </div>
+              </div>
+
+              <div class="payment__content-item">
+                <p class="payment__content-subheader">Оплачиваете так, как вам удобно</p>
+                <div class="payment__content-point">
+                  <img src="./assets/main/uil_credit-card.png" alt="img">
+                  <p>Наличными курьеру</p>
+                </div>
+
+                <div class="payment__content-point">
+                  <img src="./assets/main/uil_wallet.png" alt="img">
+                  <p>Перевод на карту</p>
+                </div>
+
+                <div class="payment__content-point">
+                  <img src="./assets/main/uil_bill.png" alt="img">
+                  <p>Безналичный расчет</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <form method="POST" class="payment-form">
+            <h4 class="payment-form__header">Оставьте заявку на консультацию и узнайте как получить скидку</h4>
+            <div class="payment-form__inputs-wrap">
+              <label>
+                Введите ваше имя
+                <input type="text" placeholder="Например, Иван">
+              </label>
+              <label>
+                Введите ваш телефон
+                <input type="tel" placeholder="+375 (XX) XXX-XX-XX">
+              </label>
+              <input type="submit" value="Оставить заявку">
+            </div>
+            <p class="payment-form__signature">Или позвоните <a href="#">+ 7 (965) 173-54-95</a> если не хотите ждать</p>
+          </form>
+        </section>
+
+        <section class="description">
+          <h2 class="description__header">Запчасти для дорожно-строительной техники</h2>
+          <div class="description__item">
+            <div class="description__text">
+              <p class="description__paragraf">
+                Современная спецтехника помогает достигать максимального уровня производственной и экономической эффективности. Она представлена экономичными надежными и функциональными машинами. Ежегодно ведущие производители предлагают покупателям новые модельные ряды высокопроизводительных машин, которые справляются с широким спектром работ.
+              </p>
+              <p class="description__paragraf">
+                Экскаваторы, погрузчики и бульдозеры стали настолько востребованы, что появилась отдельная отрасль экономики — продажа запчастей для спецтехники.
+              </p>
+              <p class="description__paragraf">
+                Продажа новых запчастей брендов Hidromek, Perkins, John Deere, Isuzu, Hitachi, JCB. 
+              </p>
+            </div>
+            <div class="description__img-wrap">
+              <img src="./assets/main/description-1.png" alt="image">
+            </div>
+          </div>
+
+          <div class="description__item">
+            <div class="description__img-wrap">
+              <img src="./assets/main/description-2.1.png" alt="image">
+            </div>
+            <div class="description__text description__text_reverse">
+              <p class="description__paragraf">
+                Даже самая дорогая и современная техника не может работать вечно. Несколько лет активной эксплуатации могут привести к поломкам и простоям. Одно из главных направлений деятельности нашей компании поставка и продажа комплектующих и узлов для дорожно-строительной техники ведущих компаний. Мы предлагаем запчасти для техники фирм Hidromek, Perkins, запасные части брендов John Deere, Isuzu и оригинальные комплектующие для торговых марок Hitachi, JCB.              </p>
+              <p class="description__paragraf">
+                Благодаря каталогу с 1 500 ед. комплектующих наши менеджеры помогут каждому клиенту в подборе нужного товара.  С 2010 года компания поставляет оригинальные узлы, детали и агрегаты для дорожно-строительной отрасли из Европы, Кореи, Японии.
+              </p>
+            </div>
+          </div>
+
+          <div class="description__item">
+            <div class="description__text">
+              <p class="description__paragraf description__paragraf_bold">
+                В день заказа вам будут поставлены со склада в Москве:
+              </p>
+              <ul class="description__paragraf description__paragraf-list">
+                <li>детали для двигателей</li>
+                <li>детали трансмиссии</li>
+                <li>фильтры</li>
+                <li>смазочные материалы</li>
+                <li>коронки</li>
+                <li>электрооборудование</li>
+                <li>ходовая часть</li>
+                <li>навесное оборудование</li>
+                <li>пальцы и втулки</li>
+                <li>шины и диски</li>
+                <li>редукторы хода и поворота</li>
+              </ul>
+              <p class="description__paragraf">
+                Благодаря каталогу с 1 500 ед. комплектующих наши менеджеры помогут каждому клиенту в подборе нужного товара.  С 2010 года компания поставляет оригинальные узлы, детали и агрегаты для дорожно-строительной отрасли из Европы, Кореи, Японии.
+              </p>
+            </div>
+            <div class="description__img-wrap">
+              <img src="./assets/main/description-3.1.png" alt="image">
+            </div>
+          </div>
+        </section>
+
+        <section class="consultation">
+          <h2 class="consultation__header">Получите экспресс-консультацию инженера-механика уже сегодня. Это абсолютно бесплатно</h2>
+          <div class="consultation-card">
+            <div class="consultation-card__head">
+              <div class="consultation-card__head-content">
+                <p>Инженер-механик, Дмитрий</p>
+                <p>Помогу подобрать запчасть и проконсультирую вас</p>
+              </div>
+            </div>
+            <form class="consultation-card__form">
+              <label>
+                Введите ваше имя
+                <input type="text" placeholder="Например, Иван">
+              </label>
+              <label>
+                Введите ваш телефон
+                <input type="tel" placeholder="+375 (XX) XXX-XX-XX">
+              </label>
+              <label>
+                Когда позвонить?
+                <input type="text" placeholder="Например, после 17.00">
+              </label>
+              <input type="submit" value="Да, хочу консультацию">
+              <div class="consultation-card__signature">
+                <img src="./assets/main/locked.png" alt="image">
+                <p>Отправляя данную форму, вы даете согласие на обработку персональных данных</p>
+              </div>
+            </form>
+            <img src="./assets/main/consultation.png" alt="image" class="consultation-card__img">
+            <div class="consultation-card__sale">
+              <p>А еще у нас <br>скидки до 10%</p>
+            </div>
+          </div>
+        </section>
+      </div>
+      
+    </main>-->
+
+    <footer class="footer">
+      <div class="container footer-flex">
+        <div class="footer__logo">
+          <img src="./assets/main/logo-footer.png" alt="logo">
+          <p>Спец<br>Сервис<br>Центр</p>
+        </div>
+        <button class="footer__button">Консультация инженера-механика</button>
+        <nav class="footer-nav">
+          <li class="footer-nav__item"><a href="" class="footer-nav__link">Гланая</a></li>
+          <li class="footer-nav__item"><a href="" class="footer-nav__link">Диагностика</a></li>
+          <li class="footer-nav__item"><a href="" class="footer-nav__link">Каталог</a></li>
+          <li class="footer-nav__item"><a href="" class="footer-nav__link">Обслуживание</a></li>
+          <li class="footer-nav__item"><a href="" class="footer-nav__link">Ремонт</a></li>
+          <li class="footer-nav__item"><a href="" class="footer-nav__link">Контакты</a></li>
+        </nav>
+        <div class="company">
+          <p class="company__text">Разработка и продвижение сайтов</p>
+          <img src="./assets/main/company.png" class="company__img" alt="company">
+        </div>
+      </div>
+    </footer>
+  <script src="bundle.js"></script></body>
+</html>
