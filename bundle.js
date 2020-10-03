@@ -104,7 +104,7 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("// import './app.scss';\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("$(document).ready(() => {\n  let openMenu = false;\n  $('.mobile-menu').click(() => {\n    if (openMenu) {\n      $('.mobile-menu').removeClass('mobile-menu_white');\n      $('.menu').removeClass('menu_show');\n      openMenu = false;\n      return;\n    }\n\n    $('.mobile-menu').addClass('mobile-menu_white');\n    $('.menu').addClass('menu_show');\n    openMenu = true;\n  });\n  /*categories button*/\n\n  $('.categories-aside__drop-down').click(() => {\n    $('.drop-down__img').toggleClass('mobile-menu_white');\n    $('.categories-aside__list').toggleClass('categories-aside__list_show');\n    $('.drop-down__img').toggleClass('drop-down__img_show');\n  });\n  /*leflet*/\n  // const mymap = L.map('mapid').setView([55.7522200, 37.6155600], 13);\n\n  const map = L.map('mapid', {\n    center: [55.734251, 37.393291],\n    zoom: 15\n  });\n  L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {\n    attribution: '© <a href=\"http://osm.org/copyright\">OpenStreetMap</a> contributors'\n  }).addTo(map);\n  L.marker([55.734251, 37.393291]).addTo(map);\n});\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 

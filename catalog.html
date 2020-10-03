@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Spares</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script> -->
+
+    <!--leaflet-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+  <link href="app.css" rel="stylesheet"></head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-info">
+          <div class="header__logo header-info__item">
+            <img src="./assets/main/logo.png" alt="logo">
+            <p>Спец<br>Сервис<br>Центр</p>
+          </div>
+          <p class="header__text header-info__item">Комплектующие для дорожно-строительной техники. Диагностика и ремонт</p>
+          <div class="header-consultation header-info__item">
+            <img src="./assets/main/consultation-img.png" alt="image">
+            <p class="header-consultation__phone">+7 (965) 173-54-95</p>
+            <p class="header-consultation__text">Консультация механика</p>
+          </div>
+          <div class="header__socials header-info__item">
+            <p class="header__social"><img src="./assets/main/viber.png" alt="viber"></p>
+            <p class="header__social"><img src="./assets/main/whatsapp.png" alt="whatsapp"></p>
+            <p class="header__social"><img src="./assets/main/telegram.png" alt="telegram"></p>
+          </div>
+          <button class="header__button header-info__item">Заказать звонок</button>
+        </div>
+      </div>
+      <div class="menu">
+        <div class="container">
+          <nav class="nav">
+            <i class="fas fa-bars mobile-menu"></i>
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="index.html" class="nav__link">Главная</a>
+              </li>
+              <li class="nav__item nav__item_border">
+                <a href="catalog.html" class="nav__link">Каталог</a>
+              </li>
+              <li class="nav__item">
+                <a href="" class="nav__link">Ремонт</a>
+              </li>
+              <li class="nav__item">
+                <a href="diagnostic.html" class="nav__link">Диагностика</a>
+              </li>
+              <li class="nav__item">
+                <a href="" class="nav__link">Техническое обслуживание</a>
+              </li>
+              <li class="nav__item">
+                <a href="contacts.html" class="nav__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container">
+        <section class="c-request">
+          <h1 class="c-request__header">Не знаете причину поломки вашей техники и сомневаетесь в выборе запчастей?</h1>
+          <form method="POST" class="c-request-form">
+            <p class="c-request-form__text">Оставьте заявку на экспресс-консультацию с инженером-механиком. Он поможет подобрать деталь или уже сегодня проведет бесплатную диагностику.</p>
+            <div class="c-request-form__inputs">
+              <label class="c-request-form__label">
+                Введите ваш телефон
+                <input type="tel" placeholder="+375 (XX) XXX-XX-XX">
+              </label>
+              <input type="submit" value="Оставить заявку">
+            </div>
+          </form>
+        </section>
+        <section class="catalog">
+          <div class="categories-aside">
+            <button class="categories-aside__drop-down">
+              Категории
+              <i class="fas fa-caret-down drop-down__img"></i>
+            </button>
+            <ul class="categories-aside__list">
+              <li><a href="">Детали для двигателей</a></li>
+              <li><a href="">Фильтры</a></li>
+              <li><a href="">Коронки, зубья, адаптеры</a></li>
+              <li><a href="">Ходовая часть</a></li>
+              <li><a href="">Пальцы и втулки</a></li>
+              <li><a href="">Редукторы хода и поворота</a></li>
+              <li><a href="">Детали трансмиссии</a></li>
+              <li><a href="">Смазочные материалы</a></li>
+              <li><a href="">Электрооборудование</a></li>
+              <li><a href="">Навесное оборудование</a></li>
+              <li><a href="">Шины и диски</a></li>
+            </ul>
+            <div class="filter"></div>
+          </div>
+          <div class="categories">
+            <div class="category">
+              <img src="./assets/catalog-categories/category-1.png" alt="image" class="category__img">
+              <p class="category__line"></p>
+              <h6 class="category__header">Запчасти для двигателей</h6>
+            </div>
+
+            <div class="category">
+              <img src="./assets/catalog-categories/category-2.png" alt="image" class="category__img">
+              <p class="category__line"></p>
+              <h6 class="category__header">Фильтры</h6>
+            </div>
+
+            <div class="category">
+              <img src="./assets/catalog-categories/category-3.png" alt="image" class="category__img">
+              <p class="category__line"></p>
+              <h6 class="category__header">Коронки, зубья, адаптеры</h6>
+            </div>
+
+            <div class="category">
+              <img src="./assets/catalog-categories/category-4.png" alt="image" class="category__img">
+              <p class="category__line"></p>
+              <h6 class="category__header">Ходовая часть</h6>
+            </div>
+
+            <div class="category">
+              <img src="./assets/catalog-categories/category-5.png" alt="image" class="category__img">
+              <p class="category__line"></p>
+              <h6 class="category__header">Пальцы и втулки</h6>
+            </div>
+
+            <div class="category">
+              <img src="./assets/catalog-categories/category-6.png" alt="image" class="category__img">
+              <p class="category__line"></p>
+              <h6 class="category__header">Редукторы хода и поворота</h6>
+            </div>
+
+            <div class="category">
+              <img src="./assets/catalog-categories/category-7.png" alt="image" class="category__img">
+              <p class="category__line"></p>
+              <h6 class="category__header">Детали трансмиссии</h6>
+            </div>
+
+            <div class="category">
+              <img src="./assets/catalog-categories/category-8.png" alt="image" class="category__img">
+              <p class="category__line"></p>
+              <h6 class="category__header">Смазочные материалы</h6>
+            </div>
+
+            <div class="category">
+              <img src="./assets/catalog-categories/category-9.png" alt="image" class="category__img">
+              <p class="category__line"></p>
+              <h6 class="category__header">Электро-оборудование</h6>
+            </div>
+
+            <div class="category">
+              <img src="./assets/catalog-categories/category-10.png" alt="image" class="category__img">
+              <p class="category__line"></p>
+              <h6 class="category__header">Навесное оборудование</h6>
+            </div>
+
+            <div class="category">
+              <img src="./assets/catalog-categories/category-11.png" alt="image" class="category__img">
+              <p class="category__line"></p>
+              <h6 class="category__header">Шины и диски</h6>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-flex">
+        <div class="footer__logo">
+          <img src="./assets/main/logo-footer.png" alt="logo">
+          <p>Спец<br>Сервис<br>Центр</p>
+        </div>
+        <button class="footer__button">Консультация инженера-механика</button>
+        <nav class="footer-nav">
+          <li class="footer-nav__item"><a href="index.html" class="footer-nav__link">Гланая</a></li>
+          <li class="footer-nav__item"><a href="catalog.html" class="footer-nav__link">Каталог</a></li>
+          <li class="footer-nav__item"><a href="" class="footer-nav__link">Ремонт</a></li>
+          <li class="footer-nav__item"><a href="diagnostic.html" class="footer-nav__link">Диагностика</a></li>
+          <li class="footer-nav__item"><a href="" class="footer-nav__link">Техническое обслуживание</a></li>
+          <li class="footer-nav__item"><a href="contacts.html" class="footer-nav__link">Контакты</a></li>
+        </nav>
+        <div class="company">
+          <p class="company__text">Разработка и продвижение сайтов</p>
+          <img src="./assets/main/company.png" class="company__img" alt="company">
+        </div>
+      </div>
+    </footer>
+  <script src="bundle.js"></script></body>
+</html>

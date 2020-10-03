@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Spares</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script> -->
+
+    <!--leaflet-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+  <link href="app.css" rel="stylesheet"></head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-info">
+          <div class="header__logo header-info__item">
+            <img src="./assets/main/logo.png" alt="logo">
+            <p>Спец<br>Сервис<br>Центр</p>
+          </div>
+          <p class="header__text header-info__item">Комплектующие для дорожно-строительной техники. Диагностика и ремонт</p>
+          <div class="header-consultation header-info__item">
+            <img src="./assets/main/consultation-img.png" alt="image">
+            <p class="header-consultation__phone">+7 (965) 173-54-95</p>
+            <p class="header-consultation__text">Консультация механика</p>
+          </div>
+          <div class="header__socials header-info__item">
+            <p class="header__social"><img src="./assets/main/viber.png" alt="viber"></p>
+            <p class="header__social"><img src="./assets/main/whatsapp.png" alt="whatsapp"></p>
+            <p class="header__social"><img src="./assets/main/telegram.png" alt="telegram"></p>
+          </div>
+          <button class="header__button header-info__item">Заказать звонок</button>
+        </div>
+      </div>
+      <div class="menu">
+        <div class="container">
+          <nav class="nav">
+            <i class="fas fa-bars mobile-menu"></i>
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="index.html" class="nav__link">Главная</a>
+              </li>
+              <li class="nav__item">
+                <a href="catalog.html" class="nav__link">Каталог</a>
+              </li>
+              <li class="nav__item">
+                <a href="" class="nav__link">Ремонт</a>
+              </li>
+              <li class="nav__item">
+                <a href="diagnostic.html" class="nav__link">Диагностика</a>
+              </li>
+              <li class="nav__item">
+                <a href="" class="nav__link">Техническое обслуживание</a>
+              </li>
+              <li class="nav__item nav__item_border">
+                <a href="contacts.html" class="nav__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container">
+          <section class="contacts">
+            <div class="contacts-card">
+              <p class="contacts-card__address">Адрес склада: г. Москва ул. Мологвардейская, 58</p>
+              <p class="contacts-card__phone"><a href="">+7-965-173-54-95</a></p>
+              <div class="contacts-card__messengers">
+                <a href="" class="contacts-card__messenger">
+                  <img src="./assets/main/viber.png" class="contacts-card__messenger-img" alt="viber">
+                </a>
+                <a href="" class="contacts-card__messenger">
+                  <img src="./assets/main/whatsapp.png" class="contacts-card__messenger-img" alt="whatsapp">
+                </a>
+                <a href="" class="contacts-card__messenger">
+                  <img src="./assets/main/telegram.png" class="contacts-card__messenger-img" alt="telegram">
+                </a>
+              </div>
+              <p class="contacts-card__email"><a href="">zh.volot-ts@yandex.ru</a></p>
+              <div class="contacts-card__socials">
+                <a href="" class="contacts-card__social">
+                  <img src="./assets/VK.png" class="contacts-card__social-img" alt="vk">
+                </a>
+                <a href="" class="contacts-card__social">
+                  <img src="./assets/Facebook.png" class="contacts-card__social-img" alt="fb">
+                </a>
+                <a href="" class="contacts-card__social">
+                  <img src="./assets/Instagram.png" class="contacts-card__social-img" alt="insta">
+                </a>
+              </div>
+            </div>
+            <div class="contacts__map">
+              <div id="mapid" class="contacts__map-area"></div>
+            </div>
+          </section>
+          <section class="consultation">
+            <h2 class="consultation__header">Получите экспресс-консультацию инженера-механика уже сегодня. Это абсолютно бесплатно</h2>
+            <div class="consultation-card">
+              <div class="consultation-card__head">
+                <div class="consultation-card__head-content">
+                  <p>Инженер-механик, Дмитрий</p>
+                  <p>Помогу подобрать запчасть и проконсультирую вас</p>
+                </div>
+              </div>
+              <form class="consultation-card__form">
+                <label>
+                  Введите ваше имя
+                  <input type="text" placeholder="Например, Иван">
+                </label>
+                <label>
+                  Введите ваш телефон
+                  <input type="tel" placeholder="+375 (XX) XXX-XX-XX">
+                </label>
+                <label>
+                  Когда позвонить?
+                  <input type="text" placeholder="Например, после 17.00">
+                </label>
+                <input type="submit" value="Да, хочу консультацию">
+                <div class="consultation-card__signature">
+                  <img src="./assets/main/locked.png" alt="image">
+                  <p>Отправляя данную форму, вы даете согласие на обработку персональных данных</p>
+                </div>
+              </form>
+              <img src="./assets/main/consultation.png" alt="image" class="consultation-card__img">
+              <div class="consultation-card__sale">
+                <p>А еще у нас <br>скидки до 10%</p>
+              </div>
+            </div>
+          </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-flex">
+        <div class="footer__logo">
+          <img src="./assets/main/logo-footer.png" alt="logo">
+          <p>Спец<br>Сервис<br>Центр</p>
+        </div>
+        <button class="footer__button">Консультация инженера-механика</button>
+        <nav class="footer-nav">
+          <li class="footer-nav__item"><a href="index.html" class="footer-nav__link">Гланая</a></li>
+          <li class="footer-nav__item"><a href="diagnostic.html" class="footer-nav__link">Диагностика</a></li>
+          <li class="footer-nav__item"><a href="catalog.html" class="footer-nav__link">Каталог</a></li>
+          <li class="footer-nav__item"><a href="" class="footer-nav__link">Обслуживание</a></li>
+          <li class="footer-nav__item"><a href="" class="footer-nav__link">Ремонт</a></li>
+          <li class="footer-nav__item"><a href="contacts.html" class="footer-nav__link">Контакты</a></li>
+        </nav>
+        <div class="company">
+          <p class="company__text">Разработка и продвижение сайтов</p>
+          <img src="./assets/main/company.png" class="company__img" alt="company">
+        </div>
+      </div>
+    </footer>
+  <script src="bundle.js"></script></body>
+</html>

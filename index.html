@@ -7,6 +7,7 @@
     <title>Spares</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
   <link href="app.css" rel="stylesheet"></head>
   <body>
     <header class="header">
@@ -35,80 +36,29 @@
           <nav class="nav">
             <i class="fas fa-bars mobile-menu"></i>
             <ul class="nav__list">
-              <li class="nav__item">
+              <li class="nav__item nav__item_border">
                 <a href="" class="nav__link">Главная</a>
               </li>
               <li class="nav__item">
-                <a href="" class="nav__link">Каталог</a>
+                <a href="catalog.html" class="nav__link">Каталог</a>
               </li>
               <li class="nav__item">
                 <a href="" class="nav__link">Ремонт</a>
               </li>
               <li class="nav__item">
-                <a href="" class="nav__link">Диагностика</a>
+                <a href="diagnostic.html" class="nav__link">Диагностика</a>
               </li>
               <li class="nav__item">
                 <a href="" class="nav__link">Техническое обслуживание</a>
               </li>
               <li class="nav__item">
-                <a href="" class="nav__link">Контакты</a>
+                <a href="contacts.html" class="nav__link">Контакты</a>
               </li>
             </ul>
           </nav>
         </div>
       </div>
     </header>
-
-    <!--diagnistc-->
-    <!-- <main class="main">
-      <div class="container">
-        <section class="d-request">
-          <h1 class="d-request__header">Бесплатная комплексная диагностика дорожно-строительной техники в день подачи заявки</h1>
-          <form method="POST" class="d-request__form">
-            <p class="d-request__form-text">Выезд на ваш объект по Москве и регионам</p>
-            <label>
-              Введите ваш телефон
-              <input type="text" placeholder="+375 (XX) XXX-XX-XX">
-            </label>
-            <input type="submit" value="Оставить заявку">
-          </form>
-          <div class="d-request__logos">
-            <img src="./assets/main/hidromek.png" alt="image" class="d-request__logo">
-            <img src="./assets/main/hitachi.png" alt="image" class="d-request__logo">
-            <img src="./assets/main/jcb.png" alt="image" class="d-request__logo">
-          </div>
-        </section>
-
-        <section class="d-advantages">
-          <h2 class="d-advantages__header">Снизим простои машин в 1,5 раза</h2>
-          <div class="d-advantages__wrap">
-            <div class="d-advantages__item">
-              <img src="./assets/diagnostic/adv-1.png" alt="image">
-              <p>При диагностике узлов и систем строительной техники, экскаваторов и погрузчиков</p>
-            </div>
-
-            <div class="d-advantages__item">
-              <img src="./assets/diagnostic/adv-2.png" alt="image">
-              <p>При сбоях в работе техники</p>
-            </div>
-
-            <div class="d-advantages__item">
-              <img src="./assets/diagnostic/adv-3.png" alt="image">
-              <p>При подготовке к работе после простоя</p>
-            </div>
-
-            <div class="d-advantages__item">
-              <img src="./assets/diagnostic/adv-4.png" alt="image">
-              <p>В начале рабочего сезона</p>
-            </div>
-
-            <div>
-              <img src="./assets/diagnostic/adv-2.png" alt="">
-            </div>
-          </div>
-        </section>
-      </div>
-    </main> -->
 
     <main class="main">
       <section class="intro">
@@ -127,7 +77,8 @@
           </form>
         </div>
         <div class="intro__img-wrap intro__item">
-          <img src="./assets/main/intro.png" alt="car">
+          <img src="./assets/main/intro-1.webp" alt="car">
+          <!-- <img src="./assets/main/intro.png" alt="car"> -->
         </div>
         <div class="companies">
           <div><img src="./assets/main/hidromek.png" alt=""></div>
@@ -521,12 +472,12 @@
         </div>
         <button class="footer__button">Консультация инженера-механика</button>
         <nav class="footer-nav">
-          <li class="footer-nav__item"><a href="" class="footer-nav__link">Гланая</a></li>
-          <li class="footer-nav__item"><a href="" class="footer-nav__link">Диагностика</a></li>
-          <li class="footer-nav__item"><a href="" class="footer-nav__link">Каталог</a></li>
+          <li class="footer-nav__item"><a href="index.html" class="footer-nav__link">Гланая</a></li>
+          <li class="footer-nav__item"><a href="diagnostic.html" class="footer-nav__link">Диагностика</a></li>
+          <li class="footer-nav__item"><a href="catalog.html" class="footer-nav__link">Каталог</a></li>
           <li class="footer-nav__item"><a href="" class="footer-nav__link">Обслуживание</a></li>
           <li class="footer-nav__item"><a href="" class="footer-nav__link">Ремонт</a></li>
-          <li class="footer-nav__item"><a href="" class="footer-nav__link">Контакты</a></li>
+          <li class="footer-nav__item"><a href="contacts.html" class="footer-nav__link">Контакты</a></li>
         </nav>
         <div class="company">
           <p class="company__text">Разработка и продвижение сайтов</p>
