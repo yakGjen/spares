@@ -570,7 +570,7 @@ table {
       position: fixed;
       top: 25px;
       right: 25px;
-      z-index: 4;
+      z-index: 2000;
       display: none;
       transition: all 0.3s linear; }
       .header .menu .mobile-menu_white {
@@ -659,11 +659,17 @@ table {
       max-width: 526px;
       font-weight: 900;
       font-size: 36px; }
+      @media (max-width: 1366px) {
+        .main .intro__header {
+          font-size: 1.7em; } }
     .main .intro__text {
       margin-bottom: 32px;
       font-weight: normal;
       font-size: 24px;
       line-height: 29px; }
+      @media (max-width: 1366px) {
+        .main .intro__text {
+          font-size: 1em; } }
     .main .intro__points {
       margin-bottom: 36px; }
     .main .intro__point {
@@ -774,6 +780,9 @@ table {
       font-weight: bold;
       font-size: 36px;
       text-align: center; }
+      @media (max-width: 1366px) {
+        .main .delivery__header {
+          font-size: 1.7em; } }
     .main .delivery__content-wrap {
       display: flex;
       align-items: center;
@@ -859,6 +868,9 @@ table {
       font-weight: bold;
       font-size: 36px;
       text-align: center; }
+      @media (max-width: 1366px) {
+        .main .repairs__header {
+          font-size: 1.7em; } }
     .main .repairs__content-wrap {
       display: flex;
       align-items: center;
@@ -1004,6 +1016,9 @@ table {
       font-weight: bold;
       font-size: 36px;
       text-align: center; }
+      @media (max-width: 1366px) {
+        .main .request__header {
+          font-size: 1.7em; } }
     .main .request__subheader {
       margin-top: 20px;
       font-size: 24px;
@@ -1115,9 +1130,9 @@ table {
       font-weight: bold;
       font-size: 36px;
       text-align: center; }
-      @media (max-width: 470px) {
+      @media (max-width: 1366px) {
         .main .advantages__header {
-          font-size: 28px; } }
+          font-size: 1.7em; } }
     .main .advantages__wrap {
       margin-top: 40px;
       display: flex;
@@ -1161,6 +1176,9 @@ table {
       font-weight: 800;
       font-size: 24px;
       text-align: center; }
+      @media (max-width: 1366px) {
+        .main .examples__header {
+          font-size: 1.7em; } }
     .main .examples__wrap {
       margin-top: 40px;
       display: flex;
@@ -1194,6 +1212,9 @@ table {
       font-weight: bold;
       font-size: 36px;
       text-align: center; }
+      @media (max-width: 1366px) {
+        .main .payment__header {
+          font-size: 1.7em; } }
     .main .payment__wrap {
       margin-top: 60px;
       display: flex;
@@ -1306,6 +1327,9 @@ table {
       font-weight: bold;
       font-size: 36px;
       text-align: center; }
+      @media (max-width: 1366px) {
+        .main .description__header {
+          font-size: 1.7em; } }
     .main .description__item {
       margin-top: 50px;
       display: flex;
