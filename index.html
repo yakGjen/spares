@@ -37,19 +37,19 @@
             <i class="fas fa-bars mobile-menu"></i>
             <ul class="nav__list">
               <li class="nav__item nav__item_border">
-                <a href="" class="nav__link">Главная</a>
+                <a href="index.html" class="nav__link">Главная</a>
               </li>
               <li class="nav__item">
                 <a href="catalog.html" class="nav__link">Каталог</a>
               </li>
               <li class="nav__item">
-                <a href="" class="nav__link">Ремонт</a>
+                <a href="remont.html" class="nav__link">Ремонт</a>
               </li>
               <li class="nav__item">
                 <a href="diagnostic.html" class="nav__link">Диагностика</a>
               </li>
               <li class="nav__item">
-                <a href="" class="nav__link">Техническое обслуживание</a>
+                <a href="obsluzhivanie.html" class="nav__link">Техническое обслуживание</a>
               </li>
               <li class="nav__item">
                 <a href="contacts.html" class="nav__link">Контакты</a>
@@ -464,6 +464,76 @@
       
     </main>
 
+    <div id="pop-up-thnks" class="pop-up">
+      <div class="pop-up-thnks">
+        <i class="fas fa-times pop-up-exit"></i>
+        <div class="pop-up-thnks__content">
+          <h6 class="pop-up-thnks__header">Спасибо за заявку</h6>
+          <p class="pop-up-thnks__text">наш специалист свяжется с вами в течение часа и ответит на все вопросы</p>
+          <p class="pop-up-thnks__subheader">Не хотите Ждать? Пишите:</p>
+          <div class="pop-up-thnks__socials">
+            <a href="#" class="pop-up-thnks__social">
+              <img src="./assets/main/viber.png" alt="image" class="pop-up-thnks__social-img">
+            </a>
+            <a href="#" class="pop-up-thnks__social">
+              <img src="./assets/main/whatsapp.png" alt="image" class="pop-up-thnks__social-img">
+            </a>
+            <a href="#" class="pop-up-thnks__social">
+              <img src="./assets/main/telegram.png" alt="image" class="pop-up-thnks__social-img">
+            </a>
+          </div>
+        </div>
+        <div class="pop-up-thnks__img-wrap">
+          <img src="./assets/thanks.png" alt="image" class="pop-up-thnks__img">
+        </div>
+      </div>
+    </div>
+
+    <div id="pop-ups-req" class="pop-up">
+      <div class="pop-ups-other pop-up-other_sm-width pop-ups-other_col">
+        <i class="fas fa-times pop-up-exit"></i>
+        <div class="pop-ups-other__content-wrap">
+          <h6 class="pop-ups-other__header">Вы будете приятно удивлены, когда узнаете стоимость нужной запчасти.</h6>
+          <p class="pop-ups-other__subheader">Для этого оставьте заявку для уточнения стоимости и бесплатной консультациис инженером-механиком.</p>
+        </div>
+        <img src="./assets/request.png" alt="image" class="pop-ups-other__img">
+        <form method="POST" class="pop-ups-form">
+          <label class="pop-ups-form__label">
+            Введите ваш телефон
+            <input type="tel" placeholder="+375 (XX) XXX-XX-XX">
+          </label>
+          <input type="submit" value="Оставить заявку" class="pop-ups-form__submit">
+        </form>
+      </div>
+      
+    </div>
+
+    <!-- pop-up exit -->
+    <div id="pop-ups-exit" class="pop-up">
+      <div class="pop-ups-o-exit">
+        <i class="fas fa-times pop-up-exit"></i>
+        <div class="pop-ups-o-exit__content-wrap">
+          <h6 class="pop-ups-o-exit__header">Подождите. Вы забыли ваш подарок</h6>
+          <p class="pop-ups-o-exit__subheader">Оставьте заявку и получите бесплатную диагностику.</p>
+        </div>
+        <div class="pop-ups-o-exit__img-wrap">
+          <img src="./assets/exit.png" alt="image" class="pop-ups-o-exit__img">
+        </div>
+        
+        <form method="POST" class="pop-ups-o-exit-form">
+          <label class="pop-ups-o-exit-form__label">
+            Введите ваше имя
+            <input type="text" placeholder="Например, Иван">
+          </label>
+          <label class="pop-ups-o-exit-form__label">
+            Введите ваш телефон
+            <input type="tel" placeholder="+375 (XX) XXX-XX-XX">
+          </label>
+          <input type="submit" value="Оставить заявку" class="pop-ups-o-exit-form__submit">
+        </form>
+      </div>
+    </div>
+
     <footer class="footer">
       <div class="container footer-flex">
         <div class="footer__logo">
@@ -475,8 +545,8 @@
           <li class="footer-nav__item"><a href="index.html" class="footer-nav__link">Гланая</a></li>
           <li class="footer-nav__item"><a href="diagnostic.html" class="footer-nav__link">Диагностика</a></li>
           <li class="footer-nav__item"><a href="catalog.html" class="footer-nav__link">Каталог</a></li>
-          <li class="footer-nav__item"><a href="" class="footer-nav__link">Обслуживание</a></li>
-          <li class="footer-nav__item"><a href="" class="footer-nav__link">Ремонт</a></li>
+          <li class="footer-nav__item"><a href="obsluzhivanie.html" class="footer-nav__link">Обслуживание</a></li>
+          <li class="footer-nav__item"><a href="remont.html" class="footer-nav__link">Ремонт</a></li>
           <li class="footer-nav__item"><a href="contacts.html" class="footer-nav__link">Контакты</a></li>
         </nav>
         <div class="company">

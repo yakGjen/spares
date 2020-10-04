@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Spares | diagnostic</title>
+    <title>Spares | obsluzhivanie</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
@@ -45,10 +45,10 @@
               <li class="nav__item">
                 <a href="remont.html" class="nav__link">Ремонт</a>
               </li>
-              <li class="nav__item nav__item_border">
+              <li class="nav__item">
                 <a href="diagnostic.html" class="nav__link">Диагностика</a>
               </li>
-              <li class="nav__item">
+              <li class="nav__item nav__item_border">
                 <a href="obsluzhivanie.html" class="nav__link">Техническое обслуживание</a>
               </li>
               <li class="nav__item">
@@ -60,11 +60,13 @@
       </div>
     </header>
 
-    <!--diagnistc-->
+    <!--obsluzhivanie-->
     <main class="main">
       <div class="container">
         <section class="d-request">
-          <h1 class="d-request__header">Бесплатная комплексная диагностика дорожно-строительной техники в день подачи заявки</h1>
+          <h1 class="d-request__header">
+            Техническое обслуживание дорожно-строительной техники без скрытых затрат
+          </h1>
           <form method="POST" class="d-request__form">
             <p class="d-request__form-text">Выезд на ваш объект по Москве и регионам</p>
             <label>
@@ -80,9 +82,14 @@
           </div>
         </section>
 
-        <section class="d-advantages">
-          <h2 class="d-advantages__header">Снизим простои машин в 1,5 раза</h2>
-          <div class="d-advantages__wrap">
+        <section class="d-advantages d-advantages_no-border">
+          <h2 class="d-advantages__header">
+            Работаем на опережение: исключим простои и убытки
+          </h2>
+          <p class="d-advantages__subheader">
+            при техническом обслуживании строительной техники, экскаваторов и погрузчиков
+          </p>
+          <!-- <div class="d-advantages__wrap">
             <div class="d-advantages__item">
               <img src="./assets/diagnostic/adv-1.png" alt="image">
               <p>При диагностике узлов и систем строительной техники, экскаваторов и погрузчиков</p>
@@ -102,26 +109,23 @@
               <img src="./assets/diagnostic/adv-4.png" alt="image">
               <p>В начале рабочего сезона</p>
             </div>
-          </div>
+          </div> -->
         </section>
 
-        <section class="d-description">
+        <section class="d-description d-description_padding">
           <div class="d-description__text-wrap">
             <p class="d-description__text">
-              Наша компания проводит комплексную компьютерную диагностику экскаваторов, погрузчиков и бульдозеров. Найдем неисправности и причины их возникновения за 4 часа.
+                Для вашей техники мы предлагаем профессиональный сервис, который включает: регулярные осмотры, диагностику, замену технических жидкостей и изношенных деталей.
             </p>
             <p class="d-description__text">
-              Мастер-диагност установит потребность, объем обслуживания и ремонта, определит ресурс безотказной работы машин для дальнейшей эксплуатации.
+                Работаем в Москве и регионах страны, обслуживаем технику с помощью мобильных бригад. Это позволяет избежать затрат на доставку тяжелых машин в сервисные центры. 
             </p>
             <p class="d-description__text">
-              Диагностируем двигатели, ходовые механизмы, гидравлические и пневматические системы, коробки передач. 
-            </p>
-            <p class="d-description__text">
-              Все работы выполним на вашей базе, что сэкономит время и средства на перегон техники.
+                Гарантируем высокое качество услуг и отсутствие скрытых затрат за счет современного ремонтно-диагностического оборудования и профессионализма сервисной службы.
             </p>
           </div>
           <div class="d-description__img-wrap">
-            <img src="./assets/diagnostic/transmission.png" class="d-description__img" alt="transmission">
+            <img src="./assets/obsluzhivanie/obsl-1.png" class="d-description__img d-description__img_right" alt="img">
           </div>
           <form action="" class="d-form">
             <h6 class="d-form__header">Экспресс-консультация мастера-диагноста</h6>
@@ -140,7 +144,7 @@
           </form>
         </section>
 
-        <section class="d-forms">
+        <!-- <section class="d-forms">
           <form method="POST" class="d-forms__form">
             <h6 class="d-forms__header">Экскаваторы</h6>
             <img src="./assets/diagnostic/d-forms-1.png" alt="image" class="d-forms__img">
@@ -182,7 +186,7 @@
             <input type="text" placeholder="+375 (XX) XXX-XX-XX">
             <input type="submit" value="Оставить заявку">
           </form>
-        </section>
+        </section> -->
       </div>
 
       <section class="d-examples">
@@ -256,22 +260,18 @@
           <h2 class="d-description-2__header">Диагностика — основа бесперебойной работы дорожно-строительной техники</h2>
           <div class="d-description-2__content-wrap">
             <div class="d-description-2__img-wrap">
-              <img src="./assets/diagnostic/desc.png" alt="image" class="d-description-2__img">
+              <img src="./assets/obsluzhivanie/obsl-2.png" alt="image" class="d-description-2__img">
             </div>
             <div class="d-description-2__text-wrap">
               <p class="d-description-2__text">
-                Появилась неисправность в работе техники, а на разборку и профилактический осмотр нет времени? Выход есть — комплексная диагностика дорожно-строительной техники поможет точно и за короткое время определить проблему. Наши специалисты оперативно выедут к месту нахождения машины со своим инструментом: вам не нужно тратить время и средства на перегон техники.
+                Спецтехника нуждается в систематическом техническом обслуживании и ремонте. Профилактические мероприятия и своевременное устранение неисправностей — гарантия использования ресурсов техники на 100%. Техническое обслуживание предупредит поломку сложных механизмов, что часто бывает при эксплуатации неисправных машин.
               </p>
-              <p class="d-description-2__text d-description-2__text_bold">Наша компания выполняет комплексную диагностику:</p>
-              <ul class="d-description-2__list">
-                <li>экскаваторов</li>
-                <li>мини-экскаваторов</li>
-                <li>погрузчиков</li>
-                <li>фронтальных погрузчиков</li>
-                <li>бульдозеров</li>
-                <li>экскаваторов-погрузчиков</li>
-              </ul>
-              <p class="d-description-2__text">Мы сотрудничаем с клиентами в любой удобной для них форме, а для постоянных партнеров действует система скидок.</p>
+              <p class="d-description-2__text">
+                Мы предоставляем клиентам в Москве и регионах комплекс услуг по обслуживанию экскаваторов,  погрузчиков, бульдозеров. У нас работают высокопрофессиональные сотрудники, которые оперативно выполнят все манипуляции от диагностики до ремонта специализированной техники.
+              </p>
+              <p class="d-description-2__text">
+                Техническое обслуживание выполняем со строгим соблюдением специфики работы и технических рекомендаций для каждого вида машин. Сотрудничаем с клиентами в любой удобной для них форме, а для постоянных партнеров действует система скидок.
+              </p>
             </div>
           </div>
         </section>
