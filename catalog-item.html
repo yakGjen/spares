@@ -238,6 +238,10 @@
       </div>
     </div>
 
+    <div id="pop-up-card-image" class="pop-up">
+      <img src="#" alt="image" class="pop-up-card-image">
+    </div>
+
     <footer class="footer">
       <div class="container footer-flex">
         <div class="footer__logo">
@@ -259,5 +263,12 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      $('.card__img').click((e) => {
+        $('#pop-up-card-image').show();
+        $('.pop-up-card-image').attr('src', e.target.src);
+      });
+    </script>
   <script src="bundle.js"></script></body>
 </html>

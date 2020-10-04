@@ -2276,7 +2276,8 @@ table {
     box-sizing: border-box;
     background-color: #ffffff;
     border-radius: 6px;
-    box-shadow: 8px 8px 12px rgba(144, 151, 174, 0.1), inset 2px 2px 3px rgba(255, 255, 255, 0.5); }
+    box-shadow: 8px 8px 12px rgba(144, 151, 174, 0.1), inset 2px 2px 3px rgba(255, 255, 255, 0.5);
+    cursor: pointer; }
     @media (max-width: 920px) {
       .catalog .category {
         max-width: 200px; } }
@@ -2333,7 +2334,8 @@ table {
         margin: 0 auto;
         text-align: center; } }
   .card__img {
-    width: 100%; }
+    width: 100%;
+    cursor: pointer; }
     @media (max-width: 500px) {
       .card__img {
         width: 60%; } }
@@ -2718,9 +2720,16 @@ table {
       right: 10px;
       top: 10px; } }
 
+.pop-up-card-image {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); }
+
 #pop-ups-exit,
 #pop-ups-req,
-#pop-up-thnks {
+#pop-up-thnks,
+#pop-up-card-image {
   display: none; }
 
 .footer {
