@@ -2289,6 +2289,9 @@ table {
       .catalog .categories {
         flex-direction: column;
         align-items: center; } }
+    .catalog .categories a {
+      text-decoration: none;
+      color: #4F4F4F; }
   .catalog .category {
     max-width: 267px;
     margin: 5px;
@@ -2320,7 +2323,8 @@ table {
     .catalog .category__header {
       text-align: center;
       font-weight: bold;
-      font-size: 18px; }
+      font-size: 18px;
+      color: #4F4F4F; }
       @media (max-width: 1366px) {
         .catalog .category__header {
           font-size: 1em; } }
