@@ -494,7 +494,9 @@ table {
         order: 4;
         margin-top: 15px; } }
     .header .header-consultation > img {
-      grid-area: img; }
+      grid-area: img;
+      border: solid 2px #FFCB4B;
+      border-radius: 50%; }
     .header .header-consultation__phone {
       grid-area: phone;
       align-self: center;
@@ -506,7 +508,8 @@ table {
       font-weight: 700;
       font-size: 14px;
       color: #FFCB4B;
-      text-decoration: underline; }
+      text-decoration: underline;
+      cursor: pointer; }
   .header__socials {
     margin: 0 15px;
     display: flex;
@@ -899,6 +902,9 @@ table {
       align-items: center; }
       .main .repairs__descr:not(:last-child) {
         margin-bottom: 37px; }
+    .main .repairs__descr-text {
+      font-size: 14px;
+      line-height: 140%; }
     .main .repairs__badge {
       margin-right: 25px; }
     .main .repairs__img {
@@ -1186,25 +1192,30 @@ table {
       @media (max-width: 950px) {
         .main .examples__wrap {
           flex-wrap: wrap; } }
-    @media (max-width: 950px) {
-      .main .examples .example {
-        margin: 15px 0;
-        padding: 0 5px;
-        box-sizing: border-box;
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        align-items: center; } }
-    .main .examples .example__img {
-      max-width: 267px; }
-      @media (max-width: 1225px) {
-        .main .examples .example__img {
-          max-width: 200px; } }
+    .main .examples .example {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 14px; }
       @media (max-width: 950px) {
-        .main .examples .example__img {
-          margin-bottom: 7px;
-          max-width: 267px;
-          width: 100%; } }
+        .main .examples .example {
+          margin: 15px 0;
+          padding: 0 5px;
+          box-sizing: border-box;
+          width: 50%;
+          display: flex;
+          flex-direction: column;
+          align-items: center; } }
+      .main .examples .example__img {
+        max-width: 267px; }
+        @media (max-width: 1225px) {
+          .main .examples .example__img {
+            max-width: 200px; } }
+        @media (max-width: 950px) {
+          .main .examples .example__img {
+            margin-bottom: 7px;
+            max-width: 267px;
+            width: 100%; } }
   .main .payment {
     padding: 80px 0;
     border-bottom: 1px solid #BDBDBD; }
@@ -1538,6 +1549,8 @@ table {
           display: none; } }
       .main .consultation-card__sale p {
         transform: skew(15deg); }
+  .main .slick-list {
+    width: 100%; }
 
 /*diagnostic*/
 .d-request {
@@ -1901,6 +1914,10 @@ table {
     @media (max-width: 450px) {
       .d-examples__example {
         max-width: 120px; } }
+    @media (max-width: 400px) {
+      .d-examples__example {
+        width: 90%;
+        max-width: 100%; } }
     .d-examples__example img {
       width: 100%; }
     .d-examples__example p {
@@ -1915,6 +1932,9 @@ table {
       @media (max-width: 500px) {
         .d-examples__example p {
           font-size: 13px; } }
+  .d-examples .slick-track {
+    display: flex;
+    justify-content: space-between; }
 
 .d-bonuses {
   padding: 60px 0;
@@ -2304,6 +2324,10 @@ table {
       @media (max-width: 1366px) {
         .catalog .category__header {
           font-size: 1em; } }
+    .catalog .category__stock {
+      margin-top: 15px;
+      text-align: center;
+      font-size: 14px; }
 
 /* card-item */
 .card {

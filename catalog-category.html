@@ -4,11 +4,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Spares | diagnostic</title>
+    <title>Spares | catalog</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script> -->
+
+    <!--leaflet-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="./assets/main/favicon.ico" type="image/x-icon">
   <link href="app.css" rel="stylesheet"></head>
   <body>
     <header class="header">
@@ -61,111 +66,98 @@
       </div>
     </header>
 
-    <!-- catalog-item -->
     <main class="main">
       <div class="container">
-        <div class="crumbs"></div>
-        <section class="card">
-          <div class="card__img-wrap">
-            <img src="./assets/card-item.png" alt="image" class="card__img">
-          </div>
-          <div class="card__content-wrap">
-            <h1 class="card__header">
-              Генератор John Deere (Джон Дир) F0182520
-            </h1>
-            <p class="card__specifications">
-              Двигатель: Генератор
-            </p>
-            <p class="card__specifications">
-              Сила тока: 200Am
-            </p>
-            <p class="card__specifications">
-              Напряжение: 12V
-            </p>
-            <p class="card__specifications">
-              Доступность: На складе
-            </p>
-            <div class="card__features">
-              <div class="card__feature">
-                <img src="./assets/card_award.png" alt="image" class="card__feature-img">
-                <p class="card__feature-text">
-                  Гарантия на все детали 3 месяца
-                </p>
-              </div>
-
-              <div class="card__feature">
-                <img src="./assets/card_box.png" alt="image" class="card__feature-img">
-                <p class="card__feature-text">
-                  Прямые поставки из Европы, Кореи, Японии
-                </p>
-              </div>
-
-              <div class="card__feature">
-                <img src="./assets/card_truck.png" alt="image" class="card__feature-img">
-                <p class="card__feature-text">
-                  Оперативная доставка в день оплаты
-                </p>
-              </div>
-            </div>
-          </div>
-          <form method="POST" class="card-form">
-            <h6 class="card-form__header">
-              Экспресс-консультация мастера-диагноста
-            </h6>
-            <p class="card-form__text">
-              Специалист перезвонит в течение 10 мин
-            </p>
-            <label>
-              Как вас зовут?
-              <input type="text" placeholder="Например, Иван">
-            </label>
-            <label>
-              На какой номер позвонить?
-              <input type="tel" placeholder="+375 (XX) XXX-XX-XX">
-            </label>
-            <input type="submit" value="Да, нужна консультация">
-          </form>
-        </section>
-
-        <section class="c-description">
-          <p class="c-description__text">
-            Купить генератор John Deere F0182520
-          </p>
-          <p class="c-description__text c-description__text_margin">
-            У нас можно купить генератор John Deere (Джон Дир) F0182520 заказав звонок, позвонив по номеру +7 (965) 173-54-95 или написав на электронную почте zh.volot-ts@yandex.ru. Всегда в наличии более 1 500 ед.  оригинальных запчастей из Европы, Кореи и Японии. Прямые поставки — гарантия выгодной цены.  Подберем запчасть и доставим заказ в день оплаты. Не можете найти деталь в нашем каталоге? Доставим любую запчасть для спецтехники под заказ.
-          </p>
-
-          <div class="consultation-card">
-            <div class="consultation-card__head">
-              <div class="consultation-card__head-content">
-                <p>Инженер-механик, Дмитрий</p>
-                <p>Помогу подобрать запчасть и проконсультирую вас</p>
-              </div>
-            </div>
-            <form class="consultation-card__form">
-              <label>
-                Введите ваше имя
-                <input type="text" placeholder="Например, Иван">
-              </label>
-              <label>
+        <section class="c-request">
+          <h1 class="c-request__header">Не знаете причину поломки вашей техники и сомневаетесь в выборе запчастей?</h1>
+          <form method="POST" class="c-request-form">
+            <p class="c-request-form__text">Оставьте заявку на экспресс-консультацию с инженером-механиком. Он поможет подобрать деталь или уже сегодня проведет бесплатную диагностику.</p>
+            <div class="c-request-form__inputs">
+              <label class="c-request-form__label">
                 Введите ваш телефон
                 <input type="tel" placeholder="+375 (XX) XXX-XX-XX">
               </label>
-              <label>
-                Когда позвонить?
-                <input type="text" placeholder="Например, после 17.00">
-              </label>
-              <input type="submit" value="Да, хочу консультацию">
-              <div class="consultation-card__signature">
-                <img src="./assets/main/locked.png" alt="image">
-                <p>Отправляя данную форму, вы даете согласие на обработку персональных данных</p>
-              </div>
-            </form>
-            <img src="./assets/main/consultation.png" alt="image" class="consultation-card__img">
-            <div class="consultation-card__sale">
-              <p>А еще у нас <br>скидки до 10%</p>
+              <input type="submit" value="Оставить заявку">
+            </div>
+          </form>
+        </section>
+        <section class="catalog">
+          <div class="categories-aside">
+            <button class="categories-aside__drop-down">
+              Категории
+              <i class="fas fa-caret-down drop-down__img"></i>
+            </button>
+            <ul class="categories-aside__list">
+              <li><a href="">Детали для двигателей</a></li>
+              <li><a href="">Фильтры</a></li>
+              <li><a href="">Коронки, зубья, адаптеры</a></li>
+              <li><a href="">Ходовая часть</a></li>
+              <li><a href="">Пальцы и втулки</a></li>
+              <li><a href="">Редукторы хода и поворота</a></li>
+              <li><a href="">Детали трансмиссии</a></li>
+              <li><a href="">Смазочные материалы</a></li>
+              <li><a href="">Электрооборудование</a></li>
+              <li><a href="">Навесное оборудование</a></li>
+              <li><a href="">Шины и диски</a></li>
+            </ul>
+            <div class="filter"></div>
+          </div>
+          <div class="categories">
+            <div class="category">
+              <img src="./assets/catalog-spares/c-1.png" alt="image" class="category__img">
+              <h6 class="category__header">Датчик температуры</h6>
+              <p class="category__stock">Доступность на складе</p>
+            </div>
+
+            <div class="category">
+              <img src="./assets/catalog-spares/c-2.png" alt="image" class="category__img">
+              <h6 class="category__header">Датчик давления масла</h6>
+              <p class="category__stock">Доступность на складе</p>
+            </div>
+
+            <div class="category">
+              <img src="./assets/catalog-spares/c-3.png" alt="image" class="category__img">
+              <h6 class="category__header">Датчик температуры охлаждающей жидкости</h6>
+              <p class="category__stock">Доступность на складе</p>
+            </div>
+
+            <div class="category">
+              <img src="./assets/catalog-spares/c-4.png" alt="image" class="category__img">
+              <h6 class="category__header">Масляный насос</h6>
+              <p class="category__stock">Доступность на складе</p>
+            </div>
+
+            <div class="category">
+              <img src="./assets/catalog-spares/c-5.png" alt="image" class="category__img">
+              <h6 class="category__header">Насос подкачки топлива</h6>
+              <p class="category__stock">Доступность на складе</p>
+            </div>
+
+            <div class="category">
+              <img src="./assets/catalog-spares/c-6.png" alt="image" class="category__img">
+              <h6 class="category__header">Натяжитель ремня F0182528</h6>
+              <p class="category__stock">Доступность на складе</p>
+            </div>
+
+            <div class="category">
+              <img src="./assets/catalog-spares/c-7.png" alt="image" class="category__img">
+              <h6 class="category__header">Пркладка головки блока цилиндров F0182216</h6>
+              <p class="category__stock">Доступность на складе</p>
+            </div>
+
+            <div class="category">
+              <img src="./assets/catalog-spares/c-8.png" alt="image" class="category__img">
+              <h6 class="category__header">Ремень вентилятора (длинный) F0182265</h6>
+              <p class="category__stock">Доступность на складе</p>
+            </div>
+
+            <div class="category">
+              <img src="./assets/catalog-spares/c-9.png" alt="image" class="category__img">
+              <h6 class="category__header">Ремень вентилятора (короткий) F0182259</h6>
+              <p class="category__stock">Доступность на складе</p>
             </div>
           </div>
+        </section>
       </div>
     </main>
 
@@ -239,10 +231,6 @@
       </div>
     </div>
 
-    <div id="pop-up-card-image" class="pop-up">
-      <img src="#" alt="image" class="pop-up-card-image">
-    </div>
-
     <footer class="footer">
       <div class="container footer-flex">
         <div class="footer__logo">
@@ -252,10 +240,10 @@
         <button class="footer__button">Консультация инженера-механика</button>
         <nav class="footer-nav">
           <li class="footer-nav__item"><a href="index.html" class="footer-nav__link">Гланая</a></li>
-          <li class="footer-nav__item"><a href="diagnostic.html" class="footer-nav__link">Диагностика</a></li>
           <li class="footer-nav__item"><a href="catalog.html" class="footer-nav__link">Каталог</a></li>
-          <li class="footer-nav__item"><a href="obsluzhivanie.html" class="footer-nav__link">Обслуживание</a></li>
           <li class="footer-nav__item"><a href="remont.html" class="footer-nav__link">Ремонт</a></li>
+          <li class="footer-nav__item"><a href="diagnostic.html" class="footer-nav__link">Диагностика</a></li>
+          <li class="footer-nav__item"><a href="obsluzhivanie.html" class="footer-nav__link">Техническое обслуживание</a></li>
           <li class="footer-nav__item"><a href="contacts.html" class="footer-nav__link">Контакты</a></li>
         </nav>
         <div class="company">
@@ -264,12 +252,5 @@
         </div>
       </div>
     </footer>
-
-    <script>
-      $('.card__img').click((e) => {
-        $('#pop-up-card-image').show();
-        $('.pop-up-card-image').attr('src', e.target.src);
-      });
-    </script>
   <script src="bundle.js"></script></body>
 </html>
